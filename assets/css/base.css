@@ -1,0 +1,14 @@
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid--full {
+  width: 100%;
+}
+
+.grid--row {
+  display: flex;
+  flex-wrap: wrap;
+}
