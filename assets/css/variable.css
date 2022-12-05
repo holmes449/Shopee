@@ -5,4 +5,7 @@
   --color-background: #f5f5f5;
   --color-orange-d: #f53e2d;
   --color-orange-n: #ff6533;
+
+  /* QR */
+  --width-qr: 185px;
 }

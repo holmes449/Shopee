@@ -4,11 +4,23 @@
   margin: 0 auto;
 }
 
+.grid--row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid--row-between {
+  justify-content: space-between;
+}
+
 .grid--full {
   width: 100%;
 }
 
-.grid--row {
-  display: flex;
-  flex-wrap: wrap;
+.grid--two {
+  width: calc(100% / 2);
+}
+
+.grid--three {
+  width: calc(100% / 3);
 }
