@@ -115,15 +115,13 @@
 /* Notify */
 .nav__notify {
   width: 400px;
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border-radius: 2px;
 }
 
 .nav__notify-header {
   color: #9c9c9c;
   font-size: 1.4rem;
   padding: 12px;
+  text-transform: capitalize;
 }
 
 .nav__notify-info {
@@ -165,6 +163,28 @@
   text-align: center;
   font-size: 1.4rem;
   padding: 5px 0;
+}
+
+/* Nav Language */
+.nav__language {
+  width: 180px;
+}
+
+.nav__language-list {
+}
+
+.nav__language-item {
+  margin: 10px;
+}
+
+.nav__language-link {
+  font-size: 1.4rem;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.nav__language-link:hover {
+  color: #ee5131;
 }
 
 /* Main */
