@@ -74,3 +74,145 @@
     transform: scale(1);
   }
 }
+
+/* Form */
+.container-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.225);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.form-model {
+  position: absolute;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  width: 550px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 30px rgb(190, 190, 190);
+}
+
+.form {
+  padding: 25px 25px 10px 25px;
+}
+
+.form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin: 0 2 0px;
+}
+
+.form__header-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form__header-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-orange);
+}
+
+.form__input--full {
+  margin: 16px 0;
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 2px;
+  padding: 8px 10px;
+}
+
+.form__body-rules {
+  width: 88%;
+  margin: 0 auto 80px auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form__body-rules--text {
+  font-weight: bold;
+}
+
+.form__body-rules--link {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.form__body-btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.form__body-btn {
+  font-size: 1.4rem;
+  padding: 6px 40px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.form__body-btn--clone {
+  background-color: var(--color-white);
+}
+
+.form__body-btn--clone:hover {
+  background-color: #f0f0f0;
+}
+
+.form__body-btn--login {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.form__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 30px 15px 30px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+}
+
+.form__footer-btn {
+  position: relative;
+  padding: 5px 60px;
+  border-radius: 2px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: aqua;
+  /* box-shadow: 5px 5px 5px rgba(185, 185, 185, 0.53); */
+}
+
+.form__footer-btn-icon {
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  left: 8px;
+}
+
+.form__footer-btn--fb {
+  color: var(--color-white);
+  background-color: #3d5799;
+}
+
+.form__footer-btn--gg {
+  color: grey;
+  background-color: var(--color-white);
+}
+
+.form__footer-btn-icon--gg {
+  color: #e34133;
+}
