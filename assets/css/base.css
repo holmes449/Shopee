@@ -107,7 +107,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  margin: 0 2 0px;
+  margin: 0 20px 0px;
 }
 
 .form__header-text {
@@ -146,6 +146,31 @@
 .form__body-rules--link {
   color: var(--color-orange);
   text-decoration: none;
+}
+
+.form__body-help {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 80px;
+  font-size: 1.3rem;
+}
+
+.form__body-help--text {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.form__body-help--link {
+  text-decoration: none;
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+.form__body-help-line {
+  display: block;
+  width: 1px;
+  margin: 0 15px;
+  background-color: rgb(206, 206, 206);
 }
 
 .form__body-btns {
