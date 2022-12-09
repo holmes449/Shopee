@@ -21,15 +21,17 @@
   <body>
     <div class="container">
       <!-- From Đăng Ký -->
-      <!-- <div class="container-form">
-        <div class="form-model">
+      <div class="container-form form-dangky" onclick="hideFormAll()">
+        <div class="form-model js-form-model">
           <form action="#" method="post" class="form">
             <header class="form__header">
               <div class="form__header-item">
                 <p class="form__header-text">Đăng ký</p>
               </div>
               <div class="form__header-item">
-                <a href="#" class="form__header-link">Đăng nhập</a>
+                <a href="#" class="form__header-link" onclick="showDangNhap()"
+                  >Đăng nhập</a
+                >
               </div>
             </header>
             <div class="form__body">
@@ -37,8 +39,8 @@
                 <input
                   class="form__input"
                   type="email"
-                  name=""
-                  id=""
+                  name="email"
+                  id="email"
                   placeholder="Email của bạn"
                 />
               </div>
@@ -46,8 +48,8 @@
                 <input
                   class="form__input"
                   type="password"
-                  name=""
-                  id=""
+                  name="matkhau"
+                  id="matkhau"
                   placeholder="Mật khẩu của bạn"
                 />
               </div>
@@ -55,8 +57,8 @@
                 <input
                   class="form__input"
                   type="password"
-                  name=""
-                  id=""
+                  name="matkhaunhaplai"
+                  id="matkhaunhaplai"
                   placeholder="Nhập lại mật khẩu"
                 />
               </div>
@@ -77,6 +79,7 @@
                   type="button"
                   class="form__body-btn form__body-btn--clone"
                   value="Trở lại"
+                  onclick="hideFormAll()"
                 />
                 <input
                   type="submit"
@@ -100,18 +103,20 @@
             >
           </footer>
         </div>
-      </div> -->
+      </div>
 
       <!-- From Đăng Nhập -->
-      <!-- <div class="container-form">
-        <div class="form-model">
+      <div class="container-form form-dangnhap" onclick="hideFormAll()">
+        <div class="form-model js-form-model">
           <form action="#" method="post" class="form">
             <header class="form__header">
               <div class="form__header-item">
                 <p class="form__header-text">Đăng nhập</p>
               </div>
               <div class="form__header-item">
-                <a href="#" class="form__header-link">Đăng ký</a>
+                <a href="#" class="form__header-link" onclick="showDangKy()"
+                  >Đăng ký</a
+                >
               </div>
             </header>
             <div class="form__body">
@@ -119,8 +124,8 @@
                 <input
                   class="form__input"
                   type="email"
-                  name=""
-                  id=""
+                  name="dangnhap-email"
+                  id="dangnhap-email"
                   placeholder="Email của bạn"
                 />
               </div>
@@ -128,8 +133,8 @@
                 <input
                   class="form__input"
                   type="password"
-                  name=""
-                  id=""
+                  name="dangnhap-matkhau"
+                  id="dangnhap-matkhau"
                   placeholder="Mật khẩu của bạn"
                 />
               </div>
@@ -143,6 +148,7 @@
                   type="button"
                   class="form__body-btn form__body-btn--clone"
                   value="Trở lại"
+                  onclick="hideFormAll()"
                 />
                 <input
                   type="submit"
@@ -166,7 +172,7 @@
             >
           </footer>
         </div>
-      </div> -->
+      </div>
 
       <!-- Header -->
       <header class="header">
@@ -333,11 +339,15 @@
               </div>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__item-link">Đăng ký</a>
+              <a href="#" class="nav__item-link" onclick="showDangKy()"
+                >Đăng ký</a
+              >
               <span class="nav__line"></span>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__item-link">Đăng nhập</a>
+              <a href="#" class="nav__item-link" onclick="showDangNhap()"
+                >Đăng nhập</a
+              >
             </li>
           </ul>
         </nav>
@@ -357,5 +367,8 @@
       <footer class="footer"></footer>
       <!-- End Footer -->
     </div>
+
+    <!-- Javascript -->
+    <script src="./assets/js/show_hide_form.js"></script>
   </body>
 </html>
